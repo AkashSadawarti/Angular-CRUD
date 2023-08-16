@@ -1,0 +1,22 @@
+<!-- <div class="user-details" *ngIf="userDetails">
+    <h1>User Details</h1>
+    <h3>UserId : {{userDetails.userId}}</h3>
+    <h3>Name : {{userDetails.title}}</h3>
+</div> -->
+
+<div class="user-details">
+    <h1>User Details</h1>
+    <mat-card *ngIf="userDetails">
+        <mat-card-content>
+            <mat-card-title>
+                UserId : {{userDetails.userId}}
+            </mat-card-title>
+        </mat-card-content>
+        <br>
+        <mat-card-content>
+            <mat-card-title>
+                Name : {{userDetails.title}}
+            </mat-card-title>
+        </mat-card-content>
+    </mat-card>
+</div>
